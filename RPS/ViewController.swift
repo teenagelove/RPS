@@ -14,6 +14,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var resetScoreButton: UIButton!
+    
+    
+    var computerScore = 0
+    var playerScore = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +27,7 @@ class ViewController: UIViewController {
     }
     func reset() {
         resultLabel.text = "Rock, Papers, Scissors?"
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.systemBackground
         robotLabel.text = "🤖"
             
         rockButton.isHidden = false
@@ -63,14 +69,18 @@ class ViewController: UIViewController {
         case .lose:
             resultLabel.text = "You lose!"
             self.view.backgroundColor = UIColor.red
+            computerScore += 1
         case .win:
             resultLabel.text = "You won!"
             self.view.backgroundColor = UIColor.green
+            playerScore += 1
         case .start:
             reset()
         }
         
         resetButton.isHidden = false
+        
+        scoreLabel.text = "\(playerScore):\(computerScore)"
     }
     
     @IBAction func rockButtonDidPressed(_ sender: UIButton) {
@@ -84,6 +94,11 @@ class ViewController: UIViewController {
     }
     @IBAction func resetButtonDidPressed(_ sender: UIButton) {
         reset()
+    }
+    @IBAction func resetScoreButtonDidPressed(_ sender: UIButton) {
+        scoreLabel.text = "0:0"
+        computerScore = 0
+        playerScore = 0
     }
     
 
