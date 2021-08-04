@@ -15,6 +15,8 @@
 		AC59CFE226BAAC8100E4C658 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC59CFE026BAAC8100E4C658 /* LaunchScreen.storyboard */; };
 		AC59CFED26BAAC8200E4C658 /* RPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59CFEC26BAAC8200E4C658 /* RPSTests.swift */; };
 		AC59CFF826BAAC8200E4C658 /* RPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59CFF726BAAC8200E4C658 /* RPSUITests.swift */; };
+		AC59D00626BAACCC00E4C658 /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59D00526BAACCC00E4C658 /* Sign.swift */; };
+		AC59D00826BAAD8100E4C658 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC59D00726BAAD8100E4C658 /* GameState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		AC59CFF326BAAC8200E4C658 /* RPSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC59CFF726BAAC8200E4C658 /* RPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSUITests.swift; sourceTree = "<group>"; };
 		AC59CFF926BAAC8200E4C658 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC59D00526BAACCC00E4C658 /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
+		AC59D00726BAAD8100E4C658 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		AC59CFD426BAAC8000E4C658 /* RPS */ = {
 			isa = PBXGroup;
 			children = (
+				AC59D00526BAACCC00E4C658 /* Sign.swift */,
+				AC59D00726BAAD8100E4C658 /* GameState.swift */,
 				AC59CFD526BAAC8000E4C658 /* AppDelegate.swift */,
 				AC59CFD726BAAC8000E4C658 /* SceneDelegate.swift */,
 				AC59CFD926BAAC8000E4C658 /* ViewController.swift */,
@@ -260,6 +266,8 @@
 			files = (
 				AC59CFDA26BAAC8000E4C658 /* ViewController.swift in Sources */,
 				AC59CFD626BAAC8000E4C658 /* AppDelegate.swift in Sources */,
+				AC59D00826BAAD8100E4C658 /* GameState.swift in Sources */,
+				AC59D00626BAACCC00E4C658 /* Sign.swift in Sources */,
 				AC59CFD826BAAC8000E4C658 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,16 +18,25 @@ class RPSTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testRockSign() throws {
+        let sign = Sign.rock
+        XCTAssert(sign.takeTurn(.rock) == .draw)
+        XCTAssert(sign.takeTurn(.paper) == .lose)
+        XCTAssert(sign.takeTurn(.scissors) == .win)
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testPaperSign() throws {
+        let sign = Sign.paper
+        XCTAssert(sign.takeTurn(.rock) == .win)
+        XCTAssert(sign.takeTurn(.paper) == .draw)
+        XCTAssert(sign.takeTurn(.scissors) == .lose)
         }
+    
+    func testScissorsSign() throws {
+        let sign = Sign.scissors
+        XCTAssert(sign.takeTurn(.rock) == .lose)
+        XCTAssert(sign.takeTurn(.paper) == .win)
+        XCTAssert(sign.takeTurn(.scissors) == .draw)
     }
 
 }
